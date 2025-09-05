@@ -16,7 +16,7 @@ def home():
     })
     return render_template('index.html', payment=payment, key_id="rzp_test_gFwKPq0IjKRlDC")
 
-@app.route('/payment/sunita', methods=['POST'])
+@app.route('/payment/success', methods=['POST'])
 def payment_success():
     data = request.form
     print("Payment successful:", data)
